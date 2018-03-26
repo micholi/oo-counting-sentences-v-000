@@ -15,8 +15,7 @@ class String
   end
 
   def count_sentences
-  #  self.split("."/"!"/"?").map {|element| element.count_sentences.compact}
   self.split(/[.!?]/).map {|string| delete!.string(&:empty?)}.size
-  #self.split(/[.!?]/).reject!(&:empty?).join.count_sentences
+
   end
 end
