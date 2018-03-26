@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     self.split("."/"!"/"?").map {|element| element.count_sentences.compact}
-  end
+  
   end
 end
