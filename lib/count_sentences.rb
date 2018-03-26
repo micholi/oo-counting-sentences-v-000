@@ -15,9 +15,6 @@ class String
   end
 
   def count_sentences
-  #self.split(/[.!?]/).map {|string| delete!.string(&:empty?)}.size
-  #self.split(/[.!?]/).reject {|string| string.nil? || string == " "}.size
-  "This, well, is a sentence. This is too!! And so is this, I think? Woo...".split(/[.!?]/).reject {|string| string.nil? || string == " "}.size
-  binding.pry
+  self.split(/[.!?]/).reject {|string| string.nil? || string == " " || string =""}.size
   end
 end
